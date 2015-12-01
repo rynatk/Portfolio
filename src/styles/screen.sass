@@ -1,4 +1,6 @@
 @import "normalize.css/normalize"
+@import url(https://fonts.googleapis.com/css?family=Ovo|Lato|Muli)
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css)
 
 /* forced CSS reset in addition to Normalize */
 *
@@ -12,31 +14,91 @@
   padding: 0
   margin: 0
 
+/* styling variables */
+$titleFont: Ovo
+
+$richPurple: #4E081B
+$subtleTan: #E5CA9D
+$staleYellow: #D9CC66
+$selectGrey: #AFAAA5
+
+$yellowNeg2: #FFF9C7
+$yellowNeg1: #FFF4A0
+$baseYellow: #D9CC66
+$yellowPos1: #B2A53A
+$yellowPos2: #8B7E17
+
+$purpleNeg2: #B7A7D1
+$purpleNeg1: #8A74AF
+$basePurple: #684D94
+$purplePos1: #4B2F79
+$purplePos2: #32175E
+
+
 body
-  background-color: #2F2C20
-  color: #F7E7E3
+  background-color: #FFF
 
 header
   position: fixed
   top: 0
   width: 100%
   height: 100px
-  background-color: #D9CC66
-  color: #2F2C20
+  background-color: #FFF
+  color: #000
 
   h1
-    padding: 0px
-    margin: 50px 25px 0px
-    font-size: 50px
-    line-height: 50px
-    text-align: left
+    margin: 20px 0 0 0
+    font-size: 80px
+    line-height: 80px
+    text-align: center
+    font-family: $titleFont
+    font-weight: bold
 
 main
 
+.wrapper
+  width: 1150px
+  margin: 120px auto 10px auto
+
+.item-main1, .item-main2, .item-main3, .item-main4, .item-main5
+  width: 200px
+  height: 150px
+  margin: 8px
+  float: left
+
+.item-main1
+  background-color: $yellowNeg2
+
+.item-main1:hover
+  background-color: $purpleNeg2
+
+.item-main2
+  background-color: $yellowNeg1
+
+.item-main2:hover
+  background-color: $purpleNeg1
+
+.item-main3
+  background-color: $baseYellow
+
+.item-main3:hover
+  background-color: $basePurple
+
+.item-main4
+  background-color: $yellowPos1
+
+.item-main4:hover
+  background-color: $purplePos1
+
+.item-main5
+  background-color: $yellowPos2
+
+.item-main5:hover
+  background-color: $purplePos2
 
 footer
   position: fixed
   bottom: 0
-  height: 50px
+  height: 40px
   width: 100%
-  background-color: #D9CC66
+  background-color: $selectGrey
