@@ -4,7 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Ovo|Lato|Muli);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans|Ovo|Lato|Muli);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css);
 html {
   font-family: sans-serif;
@@ -368,67 +368,77 @@ th {
   margin: 0; }
 
 /* styling variables */
+/* colors */
+.tan {
+  color: #dddfd4; }
+
+.yell {
+  color: #fae596; }
+
+.teal {
+  color: #86D0B2; }
+
+.blu {
+  color: #3fb0ac; }
+
+.bludrk {
+  color: #173e43; }
+
 body {
-  background-color: #FFF; }
+  background-color: #86D0B2; }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  background-color: #FFF;
-  color: #000; }
-  header h1 {
-    margin: 20px 0 0 0;
-    font-size: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-family: Ovo;
-    font-weight: bold; }
+h1 {
+  font-family: Fira Sans;
+  font-size: 1.5rem;
+  color: #dddfd4;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  margin-left: 5%; }
 
-.wrapper {
-  width: 1080px;
-  margin: 120px auto 10px auto; }
+p {
+  text-align: center;
+  font-size: 1rem; }
 
-.item-main1, .item-main2, .item-main3, .item-main4, .item-main5 {
-  width: 200px;
-  height: 150px;
-  margin: 8px;
+.columnLeft, .columnRight {
+  width: 20%;
   float: left; }
 
-.item-main1 {
-  background-color: #FFF9C7; }
+.columnMid {
+  width: 60%;
+  float: left;
+  background-color: #173e43; }
 
-.item-main1:hover {
-  background-color: #B7A7D1; }
+.headshot {
+  border-radius: 50%;
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%; }
 
-.item-main2 {
-  background-color: #FFF4A0; }
+.wrapper {
+  margin: 170px auto 10px auto; }
 
-.item-main2:hover {
-  background-color: #8A74AF; }
-
-.item-main3 {
-  background-color: #D9CC66; }
-
-.item-main3:hover {
-  background-color: #684D94; }
-
-.item-main4 {
-  background-color: #B2A53A; }
-
-.item-main4:hover {
-  background-color: #4B2F79; }
-
-.item-main5 {
-  background-color: #8B7E17; }
-
-.item-main5:hover {
-  background-color: #32175E; }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  height: 40px;
+.shellWhole {
   width: 100%;
-  background-color: #AFAAA5; }
+  height: 300px;
+  margin-top: 20px;
+  background-color: #fae596; }
+
+.shellHalf {
+  display: block;
+  width: 49%;
+  height: 300px;
+  margin-top: 20px;
+  background-color: #fae596;
+  float: left;
+  border: 1px solid #173e43; }
+
+.shellThird {
+  display: block;
+  width: 32%;
+  height: 300px;
+  margin-top: 20px;
+  background-color: #fae596;
+  float: left;
+  border: 1px solid #173e43; }
