@@ -1,5 +1,5 @@
-@import "normalize.css/normalize"
-@import url(https://fonts.googleapis.com/css?family=Ovo|Lato|Muli)
+@import "../../node_modules/normalize.css/normalize"
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans|Ovo|Lato|Muli)
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css)
 
 /* forced CSS reset in addition to Normalize */
@@ -15,90 +15,86 @@
   margin: 0
 
 /* styling variables */
-$titleFont: Ovo
+$titleFont: Fira Sans
 
-$richPurple: #4E081B
-$subtleTan: #E5CA9D
-$staleYellow: #D9CC66
-$selectGrey: #AFAAA5
+/* colors */
+$tan: #dddfd4
+$yell: #fae596
+$teal: #86D0B2
+$blu: #3fb0ac
+$bludrk: #173e43
 
-$yellowNeg2: #FFF9C7
-$yellowNeg1: #FFF4A0
-$baseYellow: #D9CC66
-$yellowPos1: #B2A53A
-$yellowPos2: #8B7E17
+.tan
+  color: $tan
 
-$purpleNeg2: #B7A7D1
-$purpleNeg1: #8A74AF
-$basePurple: #684D94
-$purplePos1: #4B2F79
-$purplePos2: #32175E
+.yell
+  color: $yell
+
+.teal
+  color: $teal
+
+.blu
+  color: $blu
+
+.bludrk
+  color: $bludrk
 
 
 body
-  background-color: #FFF
+  background-color: $teal
 
-header
-  position: fixed
-  top: 0
-  width: 100%
-  height: 100px
-  background-color: #FFF
-  color: #000
+h1
+  font-family: $titleFont
+  font-size: 1.5rem
+  color: $tan
+  text-align: left
+  margin: 0
+  font-weight: bold
+  margin-left: 5%
 
-  h1
-    margin: 20px 0 0 0
-    font-size: 80px
-    line-height: 80px
-    text-align: center
-    font-family: $titleFont
-    font-weight: bold
+p
+  text-align: center
+  font-size: 1rem
 
-main
-
-.wrapper
-  width: 1080px
-  margin: 120px auto 10px auto
-
-.item-main1, .item-main2, .item-main3, .item-main4, .item-main5
-  width: 200px
-  height: 150px
-  margin: 8px
+.columnLeft, .columnRight
+  width: 20%
   float: left
 
-.item-main1
-  background-color: $yellowNeg2
+.columnMid
+  width: 60%
+  float: left
+  background-color: $bludrk
 
-.item-main1:hover
-  background-color: $purpleNeg2
+.headshot
+  border-radius: 50%
+  width: 50%
+  margin-left: 10%
+  margin-top: 10%
+  margin-bottom: 10%
 
-.item-main2
-  background-color: $yellowNeg1
+.wrapper
+  margin: 170px auto 10px auto
 
-.item-main2:hover
-  background-color: $purpleNeg1
-
-.item-main3
-  background-color: $baseYellow
-
-.item-main3:hover
-  background-color: $basePurple
-
-.item-main4
-  background-color: $yellowPos1
-
-.item-main4:hover
-  background-color: $purplePos1
-
-.item-main5
-  background-color: $yellowPos2
-
-.item-main5:hover
-  background-color: $purplePos2
-
-footer
-  position: fixed
-  bottom: 0
-  height: 40px
+.shellWhole
   width: 100%
-  background-color: $selectGrey
+  height: 300px
+  margin-top: 20px
+  background-color: $yell
+
+.shellHalf
+  display: block
+  width: 49%
+  height: 300px
+  margin-top: 20px
+  background-color: $yell
+  float: left
+  border: 1px solid $bludrk
+
+.shellThird
+  display: block
+  width: 32%
+  height: 300px
+  margin-top: 20px
+  background-color: $yell
+  float: left
+  border: 1px solid $bludrk
