@@ -6187,129 +6187,42 @@ button.close {
   margin: 0; }
 
 /* styling variables */
-/* colors */
-.tan {
-  color: #dddfd4; }
-
-.yell {
-  color: #fae596; }
-
-.teal {
-  color: #86D0B2; }
-
-.blu {
-  color: #3fb0ac; }
-
-.bludrk {
-  color: #173e43; }
-
-.columnLeft, .columnRight {
-  width: 20%;
-  float: left; }
-
-.columnMid {
-  width: 60%;
-  float: left;
-  background-color: #173e43; }
-
-.headshot {
-  border-radius: 50%;
-  width: 50%;
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 10%; }
-
-.wrapper {
-  margin: 170px auto 10px auto; }
-
-.shellWhole {
-  width: 100%;
-  height: 300px;
-  margin-top: 20px;
+/* theme colors */
+body {
   background-color: #fae596; }
 
-.shellHalf {
-  display: block;
-  width: 49%;
-  height: 300px;
-  margin-top: 20px;
-  background-color: #fae596;
-  float: left;
-  border: 1px solid #173e43; }
+/* Header styling-------------------------------------------------------- */
+.navbar {
+  background-color: #86D0B2; }
 
-.shellThird {
-  display: block;
-  width: 32%;
-  height: 300px;
-  margin-top: 20px;
-  background-color: #fae596;
-  float: left;
-  border: 1px solid #173e43; }
+/* Sticky footer styles-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  /* Margin bottom by footer height */
+  margin-bottom: 40px; }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #dddfd4; }
+
+/* Custom page CSS-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > .container {
+  padding: 40px 15px 0; }
+
+.container .text-muted {
+  margin: 10px 0; }
+
+.footer > .container {
   padding-right: 15px;
   padding-left: 15px; }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5; }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px; }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5; }
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px; } }
-
-.container-narrow > hr {
-  margin: 30px 0; }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
-
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px; }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0; }
-
-.marketing p + h4 {
-  margin-top: 28px; }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0; }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0; } }
+code {
+  font-size: 80%; }
