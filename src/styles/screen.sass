@@ -25,8 +25,10 @@ $teal: #86D0B2
 $blu: #3fb0ac
 $bludrk: #173e43
 
+$templateBlue: #219AB3
+
 /* ----------------------------------- */
-$grayscale-primary: #219AB3 !default
+$grayscale-primary: #F54100 !default
 $grayscale-dark: #000 !default
 $grayscale-light: #fff !default
 
@@ -280,6 +282,12 @@ img
   &::-moz-selection
     background: transparent
 
+/*_______________________________________*/
+.headshot
+  height: 300px
+  border-radius: 300px
+  margin-bottom: 20px
+
 /*_________ temporary classes ___________*/
 .orange
   color: #F54100
@@ -297,3 +305,18 @@ img
   background-color: transparentize($grayscale-dark, 0.2)
   border-radius: 10px
   height: 100%
+
+.bottom-section
+  height: 700px
+  width: 100%
+  padding: 50px 0
+  color: $grayscale-light
+  background: $grayscale-dark url(./images/orangePolygon.jpg) no-repeat scroll center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+
+@media(min-width:$screen-xs-max)
+  .bottom-section
+    padding: 100px 0
