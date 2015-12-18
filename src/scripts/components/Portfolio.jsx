@@ -1,13 +1,5 @@
 import React from 'react';
 
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import IndexPage from './IndexPage.jsx';
-import WorksPage from './WorksPage.jsx';
-import AboutPage from './AboutPage.jsx';
-import ContactPage from './ContactPage.jsx';
-
-
 class Portfolio extends React.Component {
 
   constructor(props) {
