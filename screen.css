@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat|Lora);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css);
 html {
   font-family: sans-serif;
@@ -6434,3 +6434,21 @@ img::selection {
 
 img::-moz-selection {
   background: transparent; }
+
+/*_________ temporary classes ___________*/
+.orange {
+  color: #F54100;
+  font-weight: 900; }
+  .orange:last-child {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px; }
+
+.bigIcon {
+  font-size: 35px;
+  margin-top: 10px; }
+
+.legibility {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: 100%; }
