@@ -53,9 +53,7 @@ class Portfolio extends React.Component {
 
     return (
       <div>
-        <Header/>
         {currentView}
-        <Footer/>
       </div>
     );
   }
