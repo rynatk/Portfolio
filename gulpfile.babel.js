@@ -60,7 +60,13 @@ gulp.task('styles', ['fonts'], () => {
 //Images
 gulp.task('images', () => {
   gulp.src('src/styles/images/*')
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/images/'))
+});
+
+//Files
+gulp.task('files', () => {
+  gulp.src('src/files/*')
+    .pipe(gulp.dest('dist/files/'))
 });
 
 //Fonts
@@ -69,7 +75,7 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('build', ['html', 'script', 'styles', 'json', 'images']);
+gulp.task('build', ['html', 'script', 'styles', 'json', 'images', 'files']);
 
 gulp.task('deploy', ['build'], () => {
   ghPages.publish('dist');
@@ -85,6 +91,7 @@ gulp.task('serve', ['build'], () => {
   gulp.watch('src/**/*.{css,scss,sass}', ['styles']);
   gulp.watch('src/**/*.{js,jsx}', ['script']);
   gulp.watch('src/styles/images/*', ['images']);
+  gulp.watch('src/files/*', ['files']);
 });
 
 gulp.task('default', ['serve']);

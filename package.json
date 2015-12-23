@@ -22,6 +22,7 @@
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-util": "*",
+    "jquery-easing": "0.0.1",
     "vinyl-source-stream": "*"
   }
 }
