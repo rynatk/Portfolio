@@ -1,12 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "backbone": "*",
     "jquery": "*",
-    "normalize.css": "*",
-    "react": "*",
-    "react-dom": "*",
-    "underscore": "*"
+    "jquery-easing": "*",
+    "normalize.css": "*"
   },
   "devDependencies": {
     "babel-core": "*",
@@ -22,7 +19,6 @@
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-util": "*",
-    "jquery-easing": "0.0.1",
     "vinyl-source-stream": "*"
   }
 }

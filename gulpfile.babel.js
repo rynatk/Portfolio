@@ -59,7 +59,7 @@ gulp.task('styles', ['fonts'], () => {
 
 //Images
 gulp.task('images', () => {
-  gulp.src('src/styles/images/*')
+  gulp.src('src/styles/images/**/*')
     .pipe(gulp.dest('dist/images/'))
 });
 
