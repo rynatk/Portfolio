@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat|Lora);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css);
 html {
   font-family: sans-serif;
@@ -6196,10 +6196,10 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000;
-  background-color: #DAD8A7;
-  -webkit-tap-highlight-color: rgba(244, 77, 94, 0.2); }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFF;
+  background-color: #a0a0a0;
+  -webkit-tap-highlight-color: rgba(139, 0, 108, 0.2); }
 
 h1, .h1,
 h2, .h2,
@@ -6209,7 +6209,7 @@ h5, .h5,
 h6, .h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px; }
 
@@ -6225,13 +6225,13 @@ p {
     line-height: 1.5; } }
 
 a {
-  color: #F44D5E;
+  color: #8B006C;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
   ahover, afocus {
     text-decoration: none;
-    color: #f44c5d; }
+    color: #8a006b; }
 
 .light {
   font-weight: 400; }
@@ -6240,8 +6240,8 @@ a {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #F44D5E; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #8B006C; }
   .navbar-custom .navbar-brand {
     font-weight: 700; }
     .navbar-custom .navbar-brand:focus {
@@ -6276,7 +6276,7 @@ a {
     transition: background .5s ease-in-out, padding .5s ease-in-out; }
   .top-nav-collapse {
     padding: 0;
-    background-color: #F44D5E; }
+    background-color: #8B006C; }
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3); } }
 
@@ -6286,8 +6286,8 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: #000;
-  background: #5E9FA3 url("./images/material1.png") no-repeat scroll bottom center;
+  color: #eFeFeF;
+  background: #04B2F3 url("./images/phoenix.jpg") no-repeat scroll bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -6325,7 +6325,7 @@ a {
   .btn-circle:hover, .btn-circle:focus {
     outline: none;
     color: #000;
-    background: rgba(218, 216, 167, 0.6); }
+    background: rgba(139, 0, 108, 0.6); }
 
 .content-section {
   padding-top: 100px; }
@@ -6334,7 +6334,7 @@ a {
   width: 100%;
   padding: 50px 0;
   color: #000;
-  background: #5E9FA3 no-repeat scroll center center;
+  background: #04B2F3 no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -6363,29 +6363,29 @@ a {
   transition: all .3s ease-in-out; }
 
 .btn-default {
-  color: #F44D5E;
+  color: #8B006C;
   background-color: rgba(255, 255, 255, 0);
-  border-color: #F44D5E; }
+  border-color: #8B006C; }
   .btn-default:focus, .btn-default.focus {
-    color: #F44D5E;
+    color: #8B006C;
     background-color: rgba(230, 230, 230, 0);
-    border-color: #b60b1d; }
+    border-color: #0c0009; }
   .btn-default:hover {
-    color: #F44D5E;
+    color: #8B006C;
     background-color: rgba(230, 230, 230, 0);
-    border-color: #f0132a; }
+    border-color: #4e003c; }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
-    color: #F44D5E;
+    color: #8B006C;
     background-color: rgba(230, 230, 230, 0);
-    border-color: #f0132a; }
+    border-color: #4e003c; }
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
     .open > .btn-default.dropdown-toggle:hover,
     .open > .btn-default.dropdown-toggle:focus,
     .open > .btn-default.dropdown-toggle.focus {
-      color: #F44D5E;
+      color: #8B006C;
       background-color: rgba(212, 212, 212, 0);
-      border-color: #b60b1d; }
+      border-color: #0c0009; }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
     background-image: none; }
@@ -6394,15 +6394,15 @@ a {
   fieldset[disabled] .btn-default:focus,
   fieldset[disabled] .btn-default.focus {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #F44D5E; }
+    border-color: #8B006C; }
   .btn-default .badge {
     color: rgba(255, 255, 255, 0);
-    background-color: #F44D5E; }
+    background-color: #8B006C; }
   .btn-default:hover, .btn-default:focus {
-    border: 1px solid #F44D5E;
+    border: 1px solid #8B006C;
     outline: none;
-    color: #5E9FA3;
-    background-color: #F44D5E; }
+    color: #04B2F3;
+    background-color: #8B006C; }
 
 ul.banner-social-button {
   margin-top: 0; }
@@ -6448,7 +6448,7 @@ img::-moz-selection {
   width: 100%;
   padding: 50px 0;
   color: #000;
-  background: #5E9FA3 no-repeat scroll center center;
+  background: #04B2F3 no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -6467,14 +6467,14 @@ img::-moz-selection {
   font-weight: bold; }
 
 .image-block {
-  border: 3px solid #F44D5E;
+  border: 3px solid #8B006C;
   background-color: black;
   padding: 0px;
   margin: 0px;
   height: 300px;
   text-align: center;
   vertical-align: bottom;
-  background: linear-gradient(-45deg, #5E9FA3, #7FC7AF); }
+  background: linear-gradient(-45deg, #04B2F3, #8B006C); }
 
 .image-block > p {
   width: 100%;
@@ -6486,5 +6486,5 @@ img::-moz-selection {
   color: rgba(6, 6, 6, 0); }
 
 .image-block:hover > p {
-  background-color: rgba(255, 61, 127, 0.5);
-  color: #F44D5E; }
+  background-color: rgba(139, 0, 108, 0.5);
+  color: #8B006C; }
