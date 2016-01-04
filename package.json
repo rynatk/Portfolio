@@ -19,6 +19,7 @@
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-util": "*",
+    "material-ui": "^0.14.0",
     "vinyl-source-stream": "*"
   }
 }
