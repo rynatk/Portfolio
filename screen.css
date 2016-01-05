@@ -6435,10 +6435,10 @@ ul.banner-social-button {
       margin-bottom: 0; } }
 
 /* --------------------------------- */
-footer {
+#footer {
   padding: 14px 0;
   background: linear-gradient(45deg, #1D1D1D, #000); }
-  footer p {
+  #footer p {
     margin: 0; }
 
 /* --------------------------------- */
