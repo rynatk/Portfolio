@@ -6,6 +6,11 @@
     "normalize.css": "*"
   },
   "devDependencies": {
+    "babel-core": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babelify": "*",
     "bootstrap": "*",
     "bootstrap-sass": "*",
     "browser-sync": "*",
@@ -14,6 +19,7 @@
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-util": "*",
+    "react": "*",
     "vinyl-source-stream": "*"
   }
 }
