@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import Animate from 'jquery-easing';
-require('bootstrap-sass/assets/javascripts/bootstrap-sprockets');
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
