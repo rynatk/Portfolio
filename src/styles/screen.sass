@@ -1,6 +1,6 @@
 @import "../../node_modules/normalize.css/normalize"
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500)
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Slab:400,300,500)
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css)
 
 /* forced CSS reset in addition to Normalize */
@@ -15,20 +15,21 @@
   padding: 0
   margin: 0
 
-/* styling variables */
-$titleFont: Roboto
-
-/* material color palette from background image */
+/* color palette from background image */
 $offWhite: #F5F5F5
+$deepPurple: #8B006C
+$maroon: #BF0009
+$red: #FE0000
+$offBlack: #1D1D1D
 
-/* ----------------------------------- */
-$primary: #8B006C !default
-$dark: #04B2F3 !default
-$light: #000 !default
+$primary: $red !default
+$light: $offWhite !default
+$dark: #000 !default
 
-$body-font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
-$headline-font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+$body-font-family: "Roboto Slab",Helvetica,Arial,sans-serif
+$headline-font-family: "Roboto",Helvetica,Arial,sans-serif
 
+/* --------------------------------- */
 html
   width: 100%
   height: 100%
@@ -50,7 +51,7 @@ h6, .h6
   margin: 0 0 35px
   text-transform: uppercase
   font-family: $headline-font-family
-  font-weight: 700
+  font-weight: 400
   letter-spacing: 1px
 
 p
@@ -78,11 +79,12 @@ a
 .light
   font-weight: 400
 
+/* --------------------------------- */
 .navbar-custom
   margin-bottom: 0
-  border-bottom: 1px solid transparentize($light, 0.7)
+  border-bottom: 1px solid transparentize($dark, 0.7)
   text-transform: uppercase
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Roboto", Helvetica, Arial, sans-serif
   background-color: $primary
 
   .navbar-brand
@@ -94,22 +96,21 @@ a
     .navbar-toggle
       padding: 4px 6px
       font-size: 16px
-      color: $light
+      color: $dark
 
       &:focus,
       &:active
         outline: none
 
-
   a
-    color: $light
+    color: $dark
 
   .nav
 
     li
       &.active
         outline: none
-        background-color: transparentize($light, 0.7)
+        background-color: transparentize($dark, 0.7)
 
       a
         -webkit-transition: background .3s ease-in-out
@@ -120,7 +121,7 @@ a
         &:focus,
         &.active
           outline: none
-          background-color: transparentize($light, 0.7)
+          background-color: transparentize($dark, 0.7)
 
 @media(min-width:$screen-xs-max)
   .navbar
@@ -132,13 +133,21 @@ a
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out
     transition: background .5s ease-in-out, padding .5s ease-in-out
 
+    a
+      color: transparent
+
   .top-nav-collapse
     padding: 0
     background-color: $primary
 
-  .navbar-custom.top-nav-collapse
-    border-bottom: 1px solid transparentize($light, 0.7)
+    a
+      color: $dark
 
+  .navbar-custom.top-nav-collapse
+    border-bottom: 1px solid transparentize($dark, 0.7)
+
+/* -----------INTRO SECTION---------------------- */
+/* "mobile & global" */
 .intro
   display: table
   width: 100%
@@ -146,7 +155,7 @@ a
   padding: 100px 0
   text-align: center
   color: #eFeFeF
-  background: $dark url("./images/phoenix.jpg") no-repeat scroll bottom center
+  background: $light url("./images/phoenix.jpg") no-repeat scroll bottom center
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
@@ -158,10 +167,12 @@ a
 
     .brand-heading
       font-size: 40px
+      margin-bottom: 0px
 
     .intro-text
       font-size: 18px
 
+/* "full screen" */
 @media(min-width:$screen-xs-max)
   .intro
     height: 100%
@@ -173,17 +184,19 @@ a
         font-size: 120px
 
       .intro-text
-        font-size: 25px
+        font-size: 80px
+        font-weight: 300
 
+/* --------------------------------- */
 .btn-circle
   width: 70px
   height: 70px
   margin-top: 15px
   padding: 7px 16px
-  border: 2px solid $light
+  border: 2px solid $dark
   border-radius: 35px
   font-size: 40px
-  color: $light
+  color: $dark
   background: transparent
   -webkit-transition: background .3s ease-in-out
   -moz-transition: background .3s ease-in-out
@@ -192,22 +205,25 @@ a
   &:hover,
   &:focus
     outline: none
-    color: $light
+    color: $dark
     background: transparentize($primary, 0.4)
 
+/* --------------------------------- */
 .content-section
   padding-top: 100px
 
+/* --------------------------------- */
 .works-section
   width: 100%
   padding: 50px 0
-  color: $light
-  background: $dark no-repeat scroll center center
+  color: $dark
+  background: $light no-repeat scroll center center
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
   -o-background-size: cover
 
+/* --------------------------------- */
 #map
   width: 100%
   height: 200px
@@ -224,6 +240,7 @@ a
     height: 400px
     margin-top: 250px
 
+/* --------------------------------- */
 .btn
   text-transform: uppercase
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -239,9 +256,10 @@ a
   &:focus
     border: 1px solid $primary
     outline: none
-    color: $dark
+    color: $light
     background-color: $primary
 
+/* --------------------------------- */
 ul.banner-social-button
   margin-top: 0
 
@@ -258,17 +276,21 @@ ul.banner-social-button
       &:last-child
         margin-bottom: 0
 
+/* --------------------------------- */
 footer
-  padding: 50px 0
+  padding: 14px 0
+  background: linear-gradient(45deg, $offBlack, #000)
 
   p
     margin: 0
 
+/* --------------------------------- */
 ::-moz-selection, ::selection
   text-shadow: none
   background: #FCFCFC
-  background: transparentize($light, 0.8)
+  background: transparentize($dark, 0.8)
 
+/* --------------------------------- */
 img
   &::selection
     background: transparent
@@ -288,8 +310,8 @@ img
   height: 700px
   width: 100%
   padding: 50px 0
-  color: $light
-  background: $dark no-repeat scroll center center
+  color: $dark
+  background: $light no-repeat scroll center center
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
@@ -298,9 +320,6 @@ img
 @media(min-width:$screen-xs-max)
   .bottom-section
     padding: 100px 0
-
-.lightBlueMaterial
-  color:
 
 /*__________ image tiles styling ________*/
 .headermessage
@@ -319,7 +338,7 @@ img
     text-align: center
     vertical-align: bottom
 
-    background: linear-gradient(-45deg, $dark, $primary)
+    background: linear-gradient(-45deg, $light, $primary)
 
 .image-block > p
     width: 100%
