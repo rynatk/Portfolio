@@ -6197,7 +6197,7 @@ body {
   height: 100%;
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
   color: #FFF;
-  background-color: #a0a0a0;
+  background-color: #CFD8DC;
   -webkit-tap-highlight-color: rgba(254, 0, 0, 0.2); }
 
 h1, .h1,
@@ -6212,10 +6212,22 @@ h6, .h6 {
   font-weight: 400;
   letter-spacing: 1px; }
 
+h2, .h2 {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+  color: #FE0000; }
+
 p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5; }
+
+a, a:hover, a:visited, a:focus {
+  text-decoration: none; }
+
+a:hover {
+  color: #F5F5F5; }
 
 @media (min-width: 767px) {
   p {
@@ -6229,8 +6241,7 @@ a {
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
   ahover, afocus {
-    text-decoration: none;
-    color: #fd0000; }
+    text-decoration: none; }
 
 .light {
   font-weight: 400; }
@@ -6255,15 +6266,13 @@ a {
   .navbar-custom a {
     color: #000; }
   .navbar-custom .nav li.active {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3); }
+    outline: none; }
+    .navbar-custom .nav li.active a {
+      color: #F5F5F5; }
   .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out; }
-    .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a.active {
-      outline: none;
-      background-color: rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 767px) {
   .navbar {
@@ -6284,6 +6293,13 @@ a {
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3); } }
 
+/* -----------Forced override of background color change ------*/
+#navbar li a:hover, #navbar li a:focus, #navbar li a:active {
+  background-color: transparent; }
+
+.hover-able a:hover {
+  color: #F5F5F5; }
+
 /* -----------INTRO SECTION---------------------- */
 /* "mobile & global" */
 .intro {
@@ -6292,7 +6308,7 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: #eFeFeF;
+  color: #F5F5F5;
   background: #F5F5F5 url("./images/phoenix.jpg") no-repeat scroll bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6335,11 +6351,12 @@ a {
   .btn-circle:hover, .btn-circle:focus {
     outline: none;
     color: #000;
-    background: rgba(254, 0, 0, 0.6); }
+    background: rgba(245, 245, 245, 0.8); }
 
 /* --------------------------------- */
 .content-section {
-  padding-top: 100px; }
+  padding-top: 100px;
+  color: #000; }
 
 /* --------------------------------- */
 .works-section {
@@ -6352,15 +6369,10 @@ a {
   background-size: cover;
   -o-background-size: cover; }
 
-/* --------------------------------- */
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px; }
-
+/* -------------vertical spacing-------------------- */
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px; }
+    padding-top: 200px; }
   .works-section {
     padding: 100px 0; }
   #map {
@@ -6458,12 +6470,19 @@ img::-moz-selection {
 .headshot {
   height: 300px;
   border-radius: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
+
+@media (max-width: 1199px) {
+  .headshot {
+    height: 200px; } }
+
+@media (max-width: 767px) {
+  .headshot {
+    height: 200px; } }
 
 /*_________ temporary classes ___________*/
 .bottom-section {
-  height: 700px;
   width: 100%;
   padding: 50px 0;
   color: #000;
@@ -6486,14 +6505,14 @@ img::-moz-selection {
   font-weight: bold; }
 
 .image-block {
-  border: 3px solid #FE0000;
+  border: 1px solid black;
   background-color: black;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 50px;
   height: 300px;
   text-align: center;
-  vertical-align: bottom;
-  background: linear-gradient(-45deg, #F5F5F5, #FE0000); }
+  vertical-align: bottom; }
 
 .image-block > p {
   width: 100%;
@@ -6505,5 +6524,11 @@ img::-moz-selection {
   color: rgba(6, 6, 6, 0); }
 
 .image-block:hover > p {
-  background-color: rgba(254, 0, 0, 0.5);
+  background-color: rgba(245, 245, 245, 0.9);
   color: #FE0000; }
+
+.hotlink {
+  font-size: 24px; }
+  .hotlink a:hover {
+    font-size: 26px;
+    color: #FE0000; }

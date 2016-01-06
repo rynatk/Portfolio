@@ -11,8 +11,10 @@ import Animate from 'jquery-easing';
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".hoverBlocked").addClass("hover-able");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".hoverBlocked").removeClass("hover-able");
     }
 });
 

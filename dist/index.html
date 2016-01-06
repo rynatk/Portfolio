@@ -19,7 +19,7 @@
             <i class="fa fa-bars"></i>
           </button>
           <a class="navbar-brand page-scroll" href="#page-top">
-            <i class="fa fa-coffee"></i> <span class="light">Ryan Atkinson</span> Frontend Web Developer
+            <span class="light">Ryan Atkinson</span> Frontend Web Developer
           </a>
         </div>
 
@@ -30,13 +30,13 @@
             <li class="hidden">
               <a href="#page-top"></a>
             </li>
-            <li>
+            <li class="hoverBlocked">
               <a class="page-scroll" href="#about">About</a>
             </li>
-            <li>
+            <li class="hoverBlocked">
               <a class="page-scroll" href="#works">Works</a>
             </li>
-            <li>
+            <li class="hoverBlocked">
               <a class="page-scroll" href="#contact">Contact</a>
             </li>
           </ul>
@@ -66,52 +66,194 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>About Ryan Atkinson</h2>
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2>About Ryan</h2>
           <img src="./images/headshot-square-close.jpg" alt="Amazing Looking Headshot of Ryan Atkinson" class="headshot"/>
-          <p>20-something native of Virginia Beach, Virginia with a technical mind and a pragmatic approach to life. Jack-of-all-trades kind of guy who enjoys debugging more than you would expect. Comes alive when hunting for that missing parenthesis, as well as editing technical papers for clarity and readability. Web Development was the missing link in his life which finally connected his love of design, language, and meaningful problem-solving. Can be found painstakingly attempting to meditate in your local coffee shop.</p>
-          <p>Check out his resume for the bullet points!</p>
+          <p>Millenial native of Virginia Beach, Virginia with a technical mind and a pragmatic approach to life. Graduate of the Frontend Web Development course at The Iron Yard in St. Petersburg, Fl. Jack-of-all-trades. Enjoys debugging more than the next guy. He once re-organized a bookshelf full of engineering reports to correspond to color theory. </p>
+          <p>Comes alive when condensing logic, editing copy, and imparting structure onto his surroundings. Web Development finally connected his love of design, language, and meaningful problem-solving. Can be found painstakingly attempting to meditate in your local coffee shop.</p>
+          <p>Download a copy of his resume! And print it out, because it looks goooooooood :)</p>
           <p><a href="./files/AtkinsonRyan-ResumeNov2015.pdf"><i class="fa fa-file-pdf-o fa-fw"></i>Resume</a></p>
         </div>
       </div>
     </section>
 
     <!-- Works Section -->
-    <section id="works" class="content-section text-center">
+    <section id="works" class="content-section">
       <div class="works-section">
         <div class="container">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h2>Here are some of the projects that I have been working on:</h2>
-            <p>You can see all of the code and live versions of these projects on my Github profile!</p>
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2>Recent Work</h2>
+            <p>More projects and all repositories are visible on Github!</p>
           </div>
         </div>
         <div class="row">
-          <div class="image-block col-sm-4" style="background: url(images/works/impulse-screen.png) no-repeat center top; background-size:cover;">
-            <p> Impulse </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Impulse</h2>
+              <p>Final App created at The Iron Yard. Simulates a local product search tool.</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/impulse-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>Reactjs, JSX, Backbone, jQuery, Underscore, Google Maps API, ES6 (ES2015), Sass</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/impulse">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/impulse">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/iron-news-screen.png) no-repeat center top; background-size:cover;">
-            <p> Iron News </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Iron News</h2>
+              <p>A web-app modeled after "Hacker News".</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/iron-news-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>Backbone, jQuery, Underscore, Javascript, HTML, Sass</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Iron-News">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Iron-News">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/github-octodex-screen.png) no-repeat center top; background-size:cover;">
-            <p> Github Octodex </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Github Octodex</h2>
+              <p>Github's Octodex rebuilt for responsivity</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/github-octodex-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>HTML, CSS</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Github-Octodex">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Github-Octodex">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/todos-jquery-screen.png) no-repeat center top; background-size:cover;">
-            <p> Todos! </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>TODOS</h2>
+              <p>Your quintessential To-Do app</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/todos-jquery-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>jQuery, Javascript, Jade, Sass</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Todos-jQuery">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Todos-jQuery">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/minesweeper-screen.png) no-repeat center top; background-size:cover;">
-            <p> Minesweeper </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Minesweeper</h2>
+              <p>Front-end of a minesweeper application. Logic handled on the back end. Collaborative effort at The Iron Yard.</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/minesweeper-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>Backbone, jQuery, Underscore, ES6 (ES2015), HTML, Sass</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Minesweeper">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Minesweeper">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/tictactoe-screen.png) no-repeat center top; background-size:cover;">
-            <p> TicTacToe </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>TicTacToe</h2>
+              <p>A stylish game of tic-tac-toe for two players, locally.</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/tictactoe-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>jQuery, Javascript, Jade, Sass</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/TicTacToe">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/TicTacToe">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/surfandpaddleco-screen.png) no-repeat center top; background-size:cover;">
-            <p> Surf and Paddle Co. </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Surf & Paddle Co.</h2>
+              <p>Surf and Paddle Co. Webpage - The Quintessential Iron Yard HTML/CSS assignment.</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/surfandpaddleco-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>HTML, CSS</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Surf-and-Paddle-Co.">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Surf-and-Paddle-Co.">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/roshambo-screen.png) no-repeat center top; background-size:cover;">
-            <p> Roshambo </p>
-          </div>
-          <div class="image-block col-sm-4" style="background: url(images/works/secondwebpage-screen.png) no-repeat center top; background-size:cover;">
-            <p> Corporate Ipsum </p>
+          <div class="col-sm-12">
+            <div class="col-sm-3 col-sm-offset-1 text-right">
+              <h2>Roshambo</h2>
+              <p>aka Rock-Paper-Scissors. Single player game with intelligent AI. First introduction to Javascript.</p>
+            </div>
+            <div class="image-block col-sm-4" style="background: url(images/works/roshambo-screen.png) no-repeat center top; background-size:cover;">
+
+            </div>
+            <div class="col-sm-3">
+              <h3>Tech Stack</h3>
+              <p>Javascript, HTML</p>
+              <ul class="list-inline">
+                <li>
+                  <p class="hotlink"><a href="https://rynatk.github.io/Roshambo">Demo</a></p>
+                </li>
+                <li>
+                  <p class="hotlink"><a href="https://github.com/rynatk/Roshambo-ES6-Compiling">Repo</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -121,10 +263,17 @@
     <section id="contact" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>Contact Ryan Atkinson</h2>
-          <p>Feel free to email me with requests for work, questions about me, or just to say hello!</p>
-          <p><a href="mailto:ryanatk@vt.edu">ryanatk@vt.edu</a></p>
-          <p><a href="./files/AtkinsonRyan-ResumeNov2015.pdf"><i class="fa fa-file-pdf-o fa-fw"></i>Resume</a></p>
+          <h2>Contact Ryan</h2>
+          <p>"Follow me on social media or ping me an email.</p>
+          <p>I'm currently looking for an awesome team of developers and designers to join forces with!"</p>
+          <ul class="list-inline banner-social-buttons">
+            <li>
+              <p><a href="mailto:ryanatk@vt.edu">ryanatk@vt.edu</a></p>
+            </li>
+            <li>
+              <p><a href="./files/AtkinsonRyan-ResumeNov2015.pdf"><i class="fa fa-file-pdf-o fa-fw"></i>Resume</a></p>
+            </li>
+          </ul>
           <ul class="list-inline banner-social-buttons">
             <li>
               <a href="https://twitter.com/rynatk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
@@ -161,7 +310,7 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container text-center">
-        <p>Copyright &copy; Ryan Atkinson 2015</p>
+        <p>Copyright &copy; Ryan Atkinson 2016</p>
       </div>
     </footer>
 

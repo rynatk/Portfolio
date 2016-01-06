@@ -40,7 +40,7 @@ body
   height: 100%
   font-family: $body-font-family
   color: #FFF
-  background-color: #a0a0a0
+  background-color: #CFD8DC
   -webkit-tap-highlight-color: transparentize($primary, 0.8)
 
 h1, .h1,
@@ -55,10 +55,23 @@ h6, .h6
   font-weight: 400
   letter-spacing: 1px
 
+h2, .h2,
+  font-size: 36px
+  font-weight: 500
+  font-family: $body-font-family
+  color: $primary
+
 p
   margin: 0 0 25px
   font-size: 18px
   line-height: 1.5
+
+a, a:hover, a:visited, a:focus
+  text-decoration: none
+
+a:hover
+  color: $offWhite
+
 
 @media(min-width:$screen-xs-max)
   p
@@ -75,7 +88,7 @@ a
   &hover,
   &focus
     text-decoration: none
-    color: darken($primary, 0.2)
+
 
 .light
   font-weight: 400
@@ -111,18 +124,15 @@ a
     li
       &.active
         outline: none
-        background-color: transparentize($dark, 0.7)
+
+        a
+          color: $offWhite
 
       a
         -webkit-transition: background .3s ease-in-out
         -moz-transition: background .3s ease-in-out
         transition: background .3s ease-in-out
 
-        &:hover,
-        &:focus,
-        &.active
-          outline: none
-          background-color: transparentize($dark, 0.7)
 
 @media(min-width:$screen-xs-max)
   .navbar
@@ -147,6 +157,16 @@ a
   .navbar-custom.top-nav-collapse
     border-bottom: 1px solid transparentize($dark, 0.7)
 
+/* -----------Forced override of background color change ------*/
+#navbar
+  li
+    a:hover, a:focus, a:active
+      background-color: transparent
+
+.hover-able
+    a:hover
+      color: $offWhite
+
 /* -----------INTRO SECTION---------------------- */
 /* "mobile & global" */
 .intro
@@ -155,7 +175,7 @@ a
   height: auto
   padding: 100px 0
   text-align: center
-  color: #eFeFeF
+  color: $light
   background: $light url("./images/phoenix.jpg") no-repeat scroll bottom center
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -207,11 +227,12 @@ a
   &:focus
     outline: none
     color: $dark
-    background: transparentize($primary, 0.4)
+    background: transparentize($offWhite, 0.2)
 
 /* --------------------------------- */
 .content-section
   padding-top: 100px
+  color: $dark
 
 /* --------------------------------- */
 .works-section
@@ -224,15 +245,11 @@ a
   background-size: cover
   -o-background-size: cover
 
-/* --------------------------------- */
-#map
-  width: 100%
-  height: 200px
-  margin-top: 100px
+/* -------------vertical spacing-------------------- */
 
 @media(min-width:$screen-xs-max)
   .content-section
-    padding-top: 250px
+    padding-top: 200px
 
   .works-section
     padding: 100px 0
@@ -303,12 +320,19 @@ img
 .headshot
   height: 300px
   border-radius: 300px
-  margin-bottom: 20px
+  margin-bottom: 35px
   box-shadow: 5px 5px 10px transparentize(black, 0.6)
+
+@media(max-width:$screen-md-max)
+  .headshot
+    height: 200px
+
+@media(max-width:$screen-xs-max)
+  .headshot
+    height: 200px
 
 /*_________ temporary classes ___________*/
 .bottom-section
-  height: 700px
   width: 100%
   padding: 50px 0
   color: $dark
@@ -331,15 +355,14 @@ img
   font-weight: bold
 
 .image-block
-    border: 3px solid $primary
+    border: 1px solid black
     background-color: black
     padding: 0px
     margin: 0px
+    margin-bottom: 50px
     height: 300px
     text-align: center
     vertical-align: bottom
-
-    background: linear-gradient(-45deg, $light, $primary)
 
 .image-block > p
     width: 100%
@@ -351,5 +374,12 @@ img
     color: rgba(6,6,6,0.0)
 
 .image-block:hover > p
-    background-color: transparentize($primary, 0.5)
+    background-color: transparentize($offWhite, 0.1)
+    color: $primary
+
+.hotlink
+  font-size: 24px
+
+  a:hover
+    font-size: 26px
     color: $primary
