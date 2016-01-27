@@ -6329,9 +6329,10 @@ a {
     height: 100%;
     padding: 0; }
     .intro .intro-body .brand-heading {
-      font-size: 120px; }
+      font-size: 120px;
+      font-weight: 400; }
     .intro .intro-body .intro-text {
-      font-size: 80px;
+      font-size: 110px;
       font-weight: 300; } }
 
 /* --------------------------------- */
